@@ -7,47 +7,94 @@
 </head>
 <body>
 
+<!-- Сніжинки -->
+<div class="snow-container"></div>
+
 <div id="welcome-screen">
     <h1 class="welcome-text">Welcome to SnowRunner World</h1>
 </div>
 
-<header class="fade-in">
-    <h1>SnowRunner World</h1>
-    <p>Світ справжнього бездоріжжя</p>
+<header class="hero">
+    <div class="hero-content">
+        <h1>SnowRunner World</h1>
+        <p>Підкорюй бездоріжжя. Долай стихії. Стань легендою.</p>
+    </div>
 </header>
 
-<section class="content fade-in">
-    <h2>Про гру</h2>
-    <p>
-        SnowRunner — це реалістичний симулятор бездоріжжя, де гравець керує потужними вантажівками,
-        долає болота, річки, сніг та гірські дороги. Головна мета — доставляти вантажі
-        в складних умовах та розвивати свій автопарк.
-    </p>
-
-    <h2>У чому сенс гри?</h2>
-    <p>
-        Сенс гри полягає у плануванні маршрутів, правильному виборі техніки та подоланні
-        екстремальних умов. Тут важлива не швидкість, а стратегія і терпіння.
-    </p>
-
-    <h2>Чому гра популярна?</h2>
-    <p>
-        Гра стала популярною завдяки реалістичній фізиці, великому вибору техніки,
-        відкритим картам та кооперативному режиму з друзями.
-    </p>
+<section class="about">
+    <div class="text">
+        <h2>Про гру SnowRunner</h2>
+        <p>
+            SnowRunner — це реалістичний симулятор бездоріжжя від Saber Interactive.
+            Гравець керує потужними вантажівками та виконує складні контракти
+            у суворих природних умовах.
+        </p>
+        <p>
+            Болота, глибокий сніг, річки, каміння та круті підйоми —
+            кожна місія стає справжнім випробуванням.
+        </p>
+        <p>
+            У грі доступно понад 60 транспортних засобів з можливістю
+            модернізації та кастомізації.
+        </p>
+    </div>
+    <div class="image-box">
+        <img src="images/michigan-photo-dump-v0-1mnja3g5erif1.png" alt="">
+    </div>
 </section>
 
-<footer class="fade-in">
+<section class="features">
+    <div class="image-box">
+        <img src="images/snowrunner_screenshot_logo_16.png" alt="">
+    </div>
+    <div class="text">
+        <h2>Чому гра стала популярною?</h2>
+        <ul>
+            <li>✔ Реалістична фізика ґрунту</li>
+            <li>✔ Великий автопарк техніки</li>
+            <li>✔ Відкриті карти США та Росії</li>
+            <li>✔ Кооператив до 4 гравців</li>
+            <li>✔ Постійні оновлення та DLC</li>
+        </ul>
+        <p>
+            SnowRunner не про швидкість — це гра про терпіння,
+            планування маршруту та правильний вибір техніки.
+        </p>
+    </div>
+</section>
+
+<section class="gallery">
+    <h2>Галерея</h2>
+    <div class="gallery-grid">
+        <img src="images/60c7e6507284e3c6d4c16ce6c20659c7.png">
+        <img src="images/67446a8b63e56015a3fb41f4685ff5b7.png">
+        <img src="images/a73e214982f81765f86e66a539b542d8.png">
+    </div>
+</section>
+
+<footer>
     <p>© 2026 SnowRunner World</p>
 </footer>
 
 <script>
+    // Анімація привітання
     setTimeout(() => {
         document.getElementById("welcome-screen").style.opacity = "0";
         setTimeout(() => {
             document.getElementById("welcome-screen").style.display = "none";
         }, 1000);
     }, 2500);
+
+    // Сніжинки
+    const snowContainer = document.querySelector(".snow-container");
+    for (let i = 0; i < 60; i++) {
+        const snowflake = document.createElement("div");
+        snowflake.classList.add("snowflake");
+        snowflake.style.left = Math.random() * 100 + "vw";
+        snowflake.style.animationDuration = (5 + Math.random() * 5) + "s";
+        snowflake.style.opacity = Math.random();
+        snowContainer.appendChild(snowflake);
+    }
 </script>
 
 </body>

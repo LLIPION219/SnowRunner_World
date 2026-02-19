@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>SnowRunner World</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>SnowRunner World</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="snow-container"></div>
-
+<!-- Welcome Screen -->
 <div id="welcome-screen">
     <div class="welcome-content">
         <h1 class="welcome-title">SnowRunner World</h1>
@@ -16,42 +15,54 @@
     </div>
 </div>
 
+<!-- Snow -->
+<div class="snow-container"></div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+    <ul>
+        <li><a href="#about" class="nav-btn">Сюжет</a></li>
+        <li><a href="#tuning" class="nav-btn">Тюнінг</a></li>
+        <li><a href="#author" class="nav-btn">Коментар</a></li>
+        <li><a href="#pc" class="nav-btn">Системні вимоги</a></li>
+        <li><a href="#gallery" class="nav-btn">Галерея</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
 <header class="hero">
     <div class="hero-content">
         <h1>Підкорюй бездоріжжя</h1>
         <p>Стань майстром екстремальних перевезень</p>
+        <a href="#about" class="btn">Дізнатись більше</a>
     </div>
 </header>
 
-<section>
+<!-- Сюжет -->
+<section id="about">
     <div class="text">
         <h2>Про сюжет гри</h2>
         <p>
-            У SnowRunner ти працюєш водієм важкої техніки, який допомагає
+            У SnowRunner ти водій важкої техніки, який допомагає
             відновлювати регіони після природних катастроф.
         </p>
         <p>
             Твоє завдання — доставляти матеріали, ремонтувати мости,
             будувати інфраструктуру та розвивати економіку регіону.
         </p>
-        <p>
-            Кожна карта має власні контракти, побічні місії та секрети.
-        </p>
     </div>
     <div class="image-box">
-        <img src="images/michigan-photo-dump-v0-1mnja3g5erif1.png">
+        <img src="images/michigan-photo-dump-v0-1mnja3g5erif1.png" alt="Сюжет">
     </div>
 </section>
 
-<section>
+<!-- Тюнінг -->
+<section id="tuning">
     <div class="image-box">
-        <img src="images/snowrunner_screenshot_logo_16.png">
+        <img src="images/snowrunner_screenshot_logo_16.png" alt="Тюнінг">
     </div>
     <div class="text">
         <h2>Тюнінг та прокачка</h2>
-        <p>
-            У грі доступна глибока система тюнінгу. Ти можеш змінювати:
-        </p>
         <ul>
             <li>✔ Двигуни</li>
             <li>✔ Коробки передач</li>
@@ -61,38 +72,80 @@
             <li>✔ Кузови та модулі</li>
         </ul>
         <p>
-            Але не всі деталі доступні одразу. Частина відкривається
-            за підвищення рівня гравця.
-        </p>
-        <p>
-            Деякі унікальні апгрейди можна знайти тільки досліджуючи карту —
-            вони заховані у віддалених місцях.
+            Це не екшен, а просто кайфові ігри, де навіть на низьких налаштуваннях
+            дуже красива графіка.
         </p>
     </div>
 </section>
 
-<section class="gallery">
-    <h2>Галерея</h2>
-    <div class="gallery-grid">
-        <img src="images/60c7e6507284e3c6d4c16ce6c20659c7.png">
-        <img src="images/67446a8b63e56015a3fb41f4685ff5b7.png">
-        <img src="images/a73e214982f81765f86e66a539b542d8.png">
+<!-- Коментар автора -->
+<section id="author">
+    <div class="text">
+        <h2>Коментар автора</h2>
+        <p>
+            Я вважаю, що SnowRunner — це гра для тих, хто кайфує від того, як машини
+            застряють у грязюці, як працює підвіска та як правильно обрати шини.
+        </p>
+        <p>
+            Тут немає екшену, просто насолода від керування машинами та атмосфери гри.
+        </p>
     </div>
 </section>
+
+<!-- Системні вимоги -->
+<section id="pc">
+    <h2>Системні вимоги ПК</h2>
+    <div class="pc-grid">
+        <div class="pc-box">
+            <h3>Низькі</h3>
+            <p>CPU: i3</p>
+            <p>RAM: 8 GB</p>
+            <p>GPU: GTX 660</p>
+        </div>
+        <div class="pc-box">
+            <h3>Середні</h3>
+            <p>CPU: i5</p>
+            <p>RAM: 12 GB</p>
+            <p>GPU: GTX 1060</p>
+        </div>
+        <div class="pc-box">
+            <h3>Високі</h3>
+            <p>CPU: i7</p>
+            <p>RAM: 16 GB</p>
+            <p>GPU: RTX 2060+</p>
+        </div>
+    </div>
+</section>
+
+<!-- Галерея -->
+<section id="gallery" class="gallery">
+    <h2>Галерея</h2>
+    <div class="gallery-grid">
+        <img src="images/60c7e6507284e3c6d4c16ce6c20659c7.png" alt="Фото 1">
+        <img src="images/67446a8b63e56015a3fb41f4685ff5b7.png" alt="Фото 2">
+        <img src="images/a73e214982f81765f86e66a539b542d8.png" alt="Фото 3">
+        <img src="images/10835583f94639ec30866361eef29347.png" alt="Фото 4">
+        <img src="images/a8af5f3258e38ead3e187187e44e8994.png" alt="Фото 5">
+        <img src="images/9d53828bedc646c695e369d0ac258bcc.png" alt="Фото 6">
+    </div>
+</section>
+
+<!-- Кнопка наверх -->
+<button id="topBtn">↑</button>
 
 <footer>
     <p>© 2026 SnowRunner World</p>
 </footer>
 
 <script>
+// Welcome screen fade
 setTimeout(() => {
-    document.getElementById("welcome-screen").style.opacity = "0";
-    setTimeout(() => {
-        document.getElementById("welcome-screen").style.display = "none";
-    }, 1200);
+    const welcome = document.getElementById("welcome-screen");
+    welcome.style.opacity = "0";
+    setTimeout(() => welcome.style.display = "none", 1200);
 }, 3000);
 
-// красиві сніжинки
+// Snow animation
 const container = document.querySelector(".snow-container");
 for (let i = 0; i < 80; i++) {
     const snow = document.createElement("div");
@@ -102,6 +155,32 @@ for (let i = 0; i < 80; i++) {
     snow.style.animationDelay = Math.random() * 5 + "s";
     container.appendChild(snow);
 }
+
+// Navbar hide/show on scroll
+let prevScroll = window.scrollY;
+const navbar = document.getElementById("navbar");
+window.addEventListener("scroll", () => {
+    let currentScroll = window.scrollY;
+    if(currentScroll > prevScroll && currentScroll > 150){
+        navbar.style.top = "-80px";
+    } else {
+        navbar.style.top = "0";
+    }
+    prevScroll = currentScroll;
+});
+
+// Top button
+const topBtn = document.getElementById("topBtn");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        topBtn.style.opacity = "1";
+        topBtn.style.pointerEvents = "auto";
+    } else {
+        topBtn.style.opacity = "0";
+        topBtn.style.pointerEvents = "none";
+    }
+});
+topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 </script>
 
 </body>

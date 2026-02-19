@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>SnowRunner World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="welcome-screen">
+    <h1 class="welcome-text">Welcome to SnowRunner World</h1>
+</div>
+
+<header class="fade-in">
+    <h1>SnowRunner World</h1>
+    <p>Світ справжнього бездоріжжя</p>
+</header>
+
+<section class="content fade-in">
+    <h2>Про гру</h2>
+    <p>
+        SnowRunner — це реалістичний симулятор бездоріжжя, де гравець керує потужними вантажівками,
+        долає болота, річки, сніг та гірські дороги. Головна мета — доставляти вантажі
+        в складних умовах та розвивати свій автопарк.
+    </p>
+
+    <h2>У чому сенс гри?</h2>
+    <p>
+        Сенс гри полягає у плануванні маршрутів, правильному виборі техніки та подоланні
+        екстремальних умов. Тут важлива не швидкість, а стратегія і терпіння.
+    </p>
+
+    <h2>Чому гра популярна?</h2>
+    <p>
+        Гра стала популярною завдяки реалістичній фізиці, великому вибору техніки,
+        відкритим картам та кооперативному режиму з друзями.
+    </p>
+</section>
+
+<footer class="fade-in">
+    <p>© 2026 SnowRunner World</p>
+</footer>
+
+<script>
+    setTimeout(() => {
+        document.getElementById("welcome-screen").style.opacity = "0";
+        setTimeout(() => {
+            document.getElementById("welcome-screen").style.display = "none";
+        }, 1000);
+    }, 2500);
+</script>
+
+</body>
+</html>
